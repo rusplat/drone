@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оплата заказа - DJI Mavic 3 Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header-title">Оплата заказа</h1>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="payment-section">
+            <div class="container">
+                <div class="payment-card">
+                    <h2>Ваш заказ ожидает оплаты</h2>
+                    <p class="order-info">Номер вашего заказа: <span id="order-number">XXXXXX</span></p>
+                    <p class="order-info">Сумма к оплате: <span class="payment-amount">180 000 руб.</span></p>
+
+                    <div class="payment-details">
+                        <h3>Для оплаты заказа (СБП):</h3>
+                        <p>Переведите <strong>180 000 руб.</strong> по номеру телефона:</p>
+                        <p class="phone-number">+7929 9428107</p>
+                        <p class="bank-name">Банк: КБ Солидарность</p>
+                        <p class="payment-note">
+                            <strong>Важно:</strong> У вас есть <span id="timer" class="timer">15:00</span> минут на оплату заказа. По истечении этого времени заказ может быть аннулирован.
+                        </p>
+                    </div>
+
+                    <button id="check-payment-btn" class="btn primary-btn large-btn">Проверить оплату</button>
+                    <div id="payment-status" class="payment-status" style="display: none;">
+                        <p class="loading-message">Проверяем статус платежа...</p>
+                        <p class="success-message" style="display: none;">✅ Ваш заказ в обработке!</p>
+                        <p class="error-message" style="display: none;">❌ Оплата не найдена или истекло время. Попробуйте еще раз или свяжитесь с поддержкой.</p>
+                    </div>
+
+                    <p class="back-link"><a href="index.html">Вернуться на главную</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 DJI Drone Sale. Все права защищены.</p>
+            <a href="https://t.me/RusPlat_official" target="_blank" class="support-btn">Поддержка</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
