@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа - DJI Mavic 3 Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header-title">Оформление заказа</h1>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="order-form-section">
+            <div class="container">
+                <div class="form-card">
+                    <h2>DJI Mavic 3 Pro (Полный комплект)</h2>
+                    <p class="price-display">Цена: 180 000 руб.</p>
+                    <p class="warning-text">
+                        <strong>Внимание:</strong> это демонстрационная форма. Ваши данные не будут сохранены. Поля "Серия и номер паспорта" запрашиваются для имитации проверки личности при отправке дорогостоящих товаров.
+                    </p>
+                    <form action="payment.html" method="GET" class="order-form">
+                        <div class="form-group">
+                            <label for="fio">ФИО (Полностью):</label>
+                            <input type="text" id="fio" name="fio" placeholder="Иванов Иван Иванович" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="passport">Серия и номер паспорта:</label>
+                            <input type="text" id="passport" name="passport" pattern="[0-9]{4} [0-9]{6}" placeholder="ХХХХ ХХХХХХ" title="Формат: 4 цифры пробел 6 цифр (например, 1234 567890)" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Адрес доставки (Улица, дом, квартира):</label>
+                            <input type="text" id="address" name="address" placeholder="Ул. Примерная, д. 15, кв. 7" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="city">Город:</label>
+                            <input type="text" id="city" name="city" placeholder="Москва" required>
+                                                    </div>
+                        <div class="form-group">
+                            <label for="region">Область/Край/Республика:</label>
+                            <input type="text" id="region" name="region" placeholder="Московская область" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="zipcode">Почтовый индекс:</label>
+                            <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{6}" placeholder="123456" title="Формат: 6 цифр" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Номер телефона:</label>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{10,12}" placeholder="+79ХХХХХХХХХ" title="Формат: от 10 до 12 цифр, например 79291234567" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail (для уведомлений):</label>
+                            <input type="email" id="email" name="email" placeholder="your@example.com" required>
+                        </div>
+                        <button type="submit" class="btn primary-btn large-btn">Перейти к оплате</button>
+                    </form>
+                    <p class="back-link"><a href="index.html">Вернуться на главную</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 DJI Drone Sale. Все права защищены.</p>
+            <a href="https://t.me/RusPlat_official" target="_blank" class="support-btn">Поддержка</a>
+        </div>
+    </footer>
+</body>
+</html>
